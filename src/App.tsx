@@ -1,10 +1,10 @@
-import "./App.css";
-import { Application } from "./components/Application/Application";
-import Counter from "./components/Counter/Counter";
-import { MuiMode } from "./components/mui/mui-mode";
-import Skills from "./components/Skills/Skills";
-import Users from "./components/users/users";
-import { AppProviders } from "./providers/app-providers";
+import './App.css'
+import { Application } from './components/Application/Application'
+import Counter from './components/Counter/Counter'
+import { MuiMode } from './components/mui/mui-mode'
+import Skills from './components/Skills/Skills'
+import Users from './components/users/users'
+import { AppProviders } from './providers/app-providers'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Users />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

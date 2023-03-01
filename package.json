@@ -20,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,7 +31,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:jest-dom/recommended"
     ]
   },
   "browserslist": {
@@ -55,6 +58,8 @@
     }
   },
   "devDependencies": {
-    "msw": "^1.1.0"
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "msw": "^1.1.0",
+    "prettier": "2.8.4"
   }
 }
